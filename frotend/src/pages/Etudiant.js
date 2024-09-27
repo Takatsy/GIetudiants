@@ -391,7 +391,7 @@ function Billing() {
                         <h6 className="font-semibold m-0">Payment Methods</h6>
                       </Col>
                       <Col xs={24} md={12} className="d-flex">
-                        <Button type="primary">ADD NEW CARD</Button>
+                        <Button type="primary">Nouvel Etudiant</Button>
                       </Col>
                     </Row>
                   </>
