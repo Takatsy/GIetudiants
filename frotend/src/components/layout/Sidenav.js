@@ -170,7 +170,7 @@ function Sidenav({ color }) {
   ];
   
 
-  const billing = [
+  const etudiant = [
     <svg
       width="20"
       height="20"
@@ -366,16 +366,16 @@ function Sidenav({ color }) {
           </NavLink>
         </Menu.Item>
         <Menu.Item key="8">
-          <NavLink to="/billing">
+          <NavLink to="/Etudiant">
             <span
               className="icon"
               style={{
-                background: page === "billing" ? color : "",
+                background: page === "etudiant" ? color : "",
               }}
             >
-              {billing}
+              {etudiant}
             </span>
-            <span className="label">Billing</span>
+            <span className="label">Etudiant</span>
           </NavLink>
         </Menu.Item>
         <Menu.Item key="9">
