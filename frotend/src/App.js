@@ -18,6 +18,7 @@ import Parcours from "./pages/Parcours";
 import Grade from "./pages/Grade";
 import Niveau from "./pages/Niveau";
 import Etudiant from "./pages/Etudiant";
+import Inscription from "./pages/Inscription";
 import Rtl from "./pages/Rtl";
 import Profile from "./pages/Profile";
 import SignUp from "./pages/SignUp";
@@ -42,6 +43,7 @@ function App() {
           <Route exact path="/Grade" component={Grade} />
           <Route exact path="/Niveau" component={Niveau} />
           <Route exact path="/Etudiant" component={Etudiant} />
+          <Route exact path="/Inscription" component={Inscription} />
           <Route exact path="/rtl" component={Rtl} />
           <Route exact path="/profile" component={Profile} />
           <Redirect from="*" to="/dashboard" />
