@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; // Importer axios pour les requêtes HTTP
-import { Form, Select, Input, DatePicker, Button } from 'antd';
+import { Form, Select, Input, DatePicker, Button, Card, Row, Col} from 'antd';
 import jsPDF from 'jspdf';
 import QRCode from 'qrcode'; // Assurez-vous d'importer la bonne bibliothèque
 import 'antd/dist/antd.css'; // Assurez-vous d'importer le style d'Ant Design
@@ -78,9 +78,13 @@ useEffect(() => {
         console.error(err);
       });
   };
-
   return (
-    <Form layout="vertical" onFinish={onFinish}>
+    <>
+      <div className="tabled">
+      <Row gutter={[24, 0]}>
+        <Col xs="24" xl={24}>
+        <Card>   
+      <Form layout="vertical" onFinish={onFinish}>
       <Form.Item label="Parcours" name="parcours" rules={[{ required: true, message: 'Veuillez sélectionner votre parcours !' }]}>
         <Select placeholder="Sélectionnez un parcours">
           {parcoursList.map((parcours) => (
@@ -199,6 +203,13 @@ useEffect(() => {
         </Button>
       </Form.Item>
     </Form>
+            </Card>
+          
+        </Col>
+      
+      </Row>
+      </div>
+    </>
   );
 };
 
